@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>계정 삭제 — 같이타</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+  :root {
+    --primary: #4A9EFF;
+    --bg: #0D0D0D;
+    --surface: #141414;
+    --border: #2a2a2a;
+    --text: #DDDDDD;
+    --muted: #888888;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 15px; }
+  header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 20px 24px; display: flex; align-items: center; gap: 12px; }
+  .logo { width: 36px; height: 36px; background: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  header h1 { font-size: 17px; font-weight: 700; color: #fff; }
+  header span { font-size: 13px; color: var(--muted); margin-left: auto; }
+  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+  .hero { margin-bottom: 40px; padding-bottom: 32px; border-bottom: 1px solid var(--border); }
+  .hero h2 { font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .hero p { color: var(--muted); font-size: 14px; }
+  section { margin-bottom: 36px; }
+  h3 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 14px; padding-left: 12px; border-left: 3px solid var(--primary); }
+  p { color: var(--text); margin-bottom: 10px; font-size: 14px; }
+  ul { list-style: none; padding: 0; }
+  ul li { font-size: 14px; color: var(--text); padding: 6px 0 6px 16px; position: relative; }
+  ul li::before { content: '·'; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 12px; }
+  .step { display: flex; gap: 16px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid var(--border); }
+  .step:last-child { border-bottom: none; }
+  .step-num { width: 32px; height: 32px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: #fff; flex-shrink: 0; }
+  .step-content h4 { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .step-content p { font-size: 13px; color: var(--muted); margin: 0; }
+  .warning { background: rgba(255, 107, 107, 0.08); border: 1px solid rgba(255, 107, 107, 0.2); border-radius: 10px; padding: 16px 20px; margin-top: 12px; font-size: 14px; }
+  .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 12px; }
+  .contact-box a { color: var(--primary); text-decoration: none; }
+  footer { text-align: center; padding: 32px 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🚗</div>
+  <h1>같이타</h1>
+  <span>계정 삭제</span>
+</header>
+
+<div class="container">
+  <div class="hero">
+    <h2>계정 및 데이터 삭제</h2>
+    <p>같이타 계정과 관련 데이터를 삭제하는 방법을 안내합니다.</p>
+  </div>
+
+  <section>
+    <h3>앱 내에서 삭제하는 방법</h3>
+    <div class="card">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>설정 탭으로 이동</h4>
+          <p>앱 하단 탭에서 설정(⚙️) 아이콘을 탭해요.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>로그아웃</h4>
+          <p>계정 섹션에서 로그아웃 버튼을 탭해요.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>이메일로 삭제 요청</h4>
+          <p>아래 이메일로 계정 삭제를 요청해주세요. 영업일 기준 3일 이내 처리됩니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>삭제되는 데이터</h3>
+    <ul>
+      <li>로그인 계정 정보 (이메일)</li>
+      <li>저장된 차종 정보</li>
+      <li>주행 기록 전체</li>
+    </ul>
+    <div class="warning">
+      ⚠️ 계정 삭제 시 모든 주행 기록이 영구적으로 삭제되며 복구할 수 없습니다.
+    </div>
+  </section>
+
+  <section>
+    <h3>보관 기간</h3>
+    <p>계정 삭제 요청 후 30일 이내에 모든 개인정보가 완전히 삭제됩니다.</p>
+  </section>
+
+  <section>
+    <h3>삭제 요청 이메일</h3>
+    <div class="contact-box">
+      <p><strong>이메일:</strong> <a href="mailto:soleu.dev@gmail.com">soleu.dev@gmail.com</a></p>
+      <p style="margin-top:8px; font-size:13px; color:#888;">제목: [같이타] 계정 삭제 요청<br>내용: 가입 시 사용한 이메일 주소와 삭제 요청 사유를 적어주세요.</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>© 2025 같이타. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
